@@ -20,7 +20,5 @@ class EventsClient(discord.Client):
     async def on_message(self, message):
         pass
 
-intents = discord.Intents.default()
-
-client = EventsClient()
+client = EventsClient(intents=None)
 client.run(token)
